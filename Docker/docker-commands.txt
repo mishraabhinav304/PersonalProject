@@ -1,0 +1,11 @@
+List ACR Repositories: 
+
+az acr repository list -n <your-registry-name>
+
+List Images within an ACR Repository: 
+
+az acr repository show-tags --name ernpallregistry --repository MyRepository --detail
+
+Image Import: 
+
+az acr import --name erunallregistry --source "logstash:8.10.3" --image "logstash:8.10.3" --registry /subscriptions/37b49bf2-2ae6-4c51-bf83-b3ecd21c864c/resourceGroups/er-nonprod-all-rsg/providers/Microsoft.ContainerRegistry/registries/ernpallregistry
